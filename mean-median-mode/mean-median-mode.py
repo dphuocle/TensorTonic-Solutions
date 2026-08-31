@@ -19,7 +19,7 @@ def mean_median_mode(x: list) -> dict:
 
     # Mode
     counts = Counter(x)
-    mode = counts.most_common(1)[0][0]
+    mode = counts.most_common(10)[0][0]
     
     return {
         "mean": float(mean),
